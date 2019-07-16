@@ -5,7 +5,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: './client/index.js',
+  entry: './src/index.js',
   output: {
     filename: 'bundle.[hash].js',
     path: path.resolve(__dirname, './public')
@@ -34,9 +34,9 @@ module.exports = {
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': './client/core/components',
-      '@m': path.resolve(__dirname, 'client/modules'),
-      '@i': path.resolve(__dirname, 'client/assets/img')
+      '@/c': './client/core/components',
+      '@/m': path.resolve(__dirname, 'client/modules'),
+      '@/i': path.resolve(__dirname, 'client/assets/img')
     }
   },
   module: {

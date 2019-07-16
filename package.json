@@ -4,7 +4,7 @@
   "description": "My simple frontend template",
   "main": "index.js",
   "scripts": {
-    "client:dev": "webpack-dev-server --color"
+    "dev": "webpack-dev-server --color --open"
   },
   "author": "Igor Gerasimov",
   "license": "ISC",

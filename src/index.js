@@ -1,11 +1,13 @@
 import Vue from 'vue'
 
-import App from './core/App.vue'
-import infrastructure from './infrastructure.js'
+import App from './app/core/App.vue'
+import router from './app/router'
+import store from './app/store'
 
 import 'normalize.css'
 
 new Vue({
-  ...infrastructure,
+  router,
+  store,
   render: h => h(App)
 }).$mount('#app')
